@@ -5,8 +5,4 @@ LV2. JadenCase 문자열 만들기
 
 
 def solution(s):
-    return ' '.join([jaden_case(w) for w in s.split(" ")])
-
-
-def jaden_case(s):
-    return s if not s else s.capitalize()
+    return ' '.join([w.capitalize() for w in s.split(" ")])
