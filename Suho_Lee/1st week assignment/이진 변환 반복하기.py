@@ -29,10 +29,7 @@ def solution(s):
     change_cnt = 0 # 변환횟수
     zero_cnt = 0 # 제거된 0의 개수
     
-    while True:
-        
-        if len(s)==1:
-            break
+    while s!='1':
 
         zero_cnt += s.count('0') # 0의 개수만 세어주기
         tmp = '1'*s.count('1') # 임시변수에 1의 개수만큼 문자열만들기
