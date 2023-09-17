@@ -1,4 +1,4 @@
-# 나의 1차 풀이 -> 리스트로 풀기 실패
+# 나의 1차 풀이 -> 리스트로 풀기 실패..!
 def solution(s):
     
     change_cnt = 0 # 변환횟수
@@ -33,7 +33,7 @@ def solution(s):
         
         if len(s)==1:
             break
-                
+
         zero_cnt += s.count('0') # 0의 개수만 세어주기
         tmp = '1'*s.count('1') # 임시변수에 1의 개수만큼 문자열만들기
         s = bin(len(tmp))[2:] # 이진변환 실행
