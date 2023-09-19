@@ -1,3 +1,14 @@
+# ====================================================================
+# 시간초과
+def solution(s):
+    s = s.replace("()","")
+    if s == "()":
+        answer = True
+    else:
+        answer = False
+    return answer
+
+# ====================================================================
 def solution(s):
     answer = 0
     for i in s:
