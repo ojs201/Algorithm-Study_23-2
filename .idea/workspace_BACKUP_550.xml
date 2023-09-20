@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="81dd98f2-0f57-4c55-9569-d974b562430a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/JadenCase 문자열 만들기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/숫자의 표현.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/이진 변환 반복하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/최솟값 만들기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/올바른 괄호.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Omega/1st week assignment/최댓값과 최솟값.py" beforeDir="false" afterPath="$PROJECT_DIR$/Omega/1st week assignment/최댓값과 최솟값.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Omega/1st week assignment/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Omega/1st week assignment/최댓값과 최솟값.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Omega/1st week assignment/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
+=======
+    <list default="true" id="81dd98f2-0f57-4c55-9569-d974b562430a" name="Changes" comment="" />
+>>>>>>> 2c87dafd1a8fe4b50907899805feae4239824752
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,12 +38,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Omega&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jaesuk/Desktop/Programming/Algorithm-Study_23-2&quot;
+=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Omega",
     "last_opened_file_path": "C:/Users/이수호/PycharmProjects/Algorithm"
+>>>>>>> 2c87dafd1a8fe4b50907899805feae4239824752
   }
 }</component>
   <component name="RecentsManager">
