@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81dd98f2-0f57-4c55-9569-d974b562430a" name="Changes" comment="" />
+    <list default="true" id="81dd98f2-0f57-4c55-9569-d974b562430a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/JadenCase 문자열 만들기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/숫자의 표현.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/이진 변환 반복하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Omega/1st week assignment/최솟값 만들기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Omega/1st week assignment/최댓값과 최솟값.py" beforeDir="false" afterPath="$PROJECT_DIR$/Omega/1st week assignment/최댓값과 최솟값.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

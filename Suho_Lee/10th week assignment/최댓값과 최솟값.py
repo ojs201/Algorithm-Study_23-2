@@ -11,7 +11,8 @@ def solution(s):
     if mx < 0 and mx < 0:
         answer = print(str(mx), str(mn))
     else:
-        answer = print(str(mn), str(mx))
+        answer = print(str(mn), str(
+        mx))
     return answer
 
 solution(initial)
