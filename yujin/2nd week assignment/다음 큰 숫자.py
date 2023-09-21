@@ -3,4 +3,4 @@ def solution(n):
     while True:
         if bin(n)[2:].count("1") == bin(m)[2:].count("1"):
             return m
-        m += 1 
+        m += 1
