@@ -31,8 +31,4 @@ def solution(n):
 
 
 def nums_one(num):
-    return dec_to_bin(num).count('1')
-
-
-def dec_to_bin(num):
-    return bin(num).replace('0b', '')
+    return bin(num).count('1')
