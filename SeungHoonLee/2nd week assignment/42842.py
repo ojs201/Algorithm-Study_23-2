@@ -23,8 +23,10 @@ LV2. 카펫
     -> 2w^2 - (brown-4)x + 2yellow = 0
 
 - 이는 2차 방정식 'ax^2 + bx + c = 0'과 동일한 형태이므로, 이를 w에 대한 근의 공식으로 정리할 수 있다.
-    -> w = (-b ± sqrt(b^2 - 4ac)) / 2a [a = 2, b = -(brown-4), c = 2yellow]
-    -> h = yellow / w
+    -> w = (-b + sqrt(b^2 - 4ac)) / 2a
+    -> h = (-b - sqrt(b^2 - 4ac)) / 2a
+
+    [a = 2, b = -(brown-4), c = 2yellow]
 
 - 따라서 정답은 [w + 2, h + 2]가 된다.
 """
@@ -42,8 +44,7 @@ def solution1(brown, yellow):
 
 
 def solution2(brown, yellow):
-    w = max(quadratic(2, -(brown - 4), 2 * yellow))
-    h = yellow // w
+    w, h = quadratic(2, -(brown - 4), 2 * yellow))
     return [w + 2, h + 2]
 
 
