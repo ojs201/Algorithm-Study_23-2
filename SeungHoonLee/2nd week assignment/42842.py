@@ -44,7 +44,7 @@ def solution1(brown, yellow):
 
 
 def solution2(brown, yellow):
-    w, h = quadratic(2, -(brown - 4), 2 * yellow))
+    w, h = quadratic(2, -(brown - 4), 2 * yellow)
     return [w + 2, h + 2]
 
 
