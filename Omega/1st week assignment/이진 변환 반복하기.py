@@ -25,7 +25,7 @@ while int(data) != 1:
     data, cnt = remove_zero(data)
     cal_cnt += 1
     zero_cnt += cnt
-    temp = list(bin(len(remove_zero(data)[0]))) # 0을 제거하고 이진수로 변환 (이진수)
+    temp = list(bin(len(data))) # 0을 제거하고 이진수로 변환 (이진수)
     data = ''.join(map(str, temp[2:])) # 0을 제거한 이후의 수 (십진수)
 
 
