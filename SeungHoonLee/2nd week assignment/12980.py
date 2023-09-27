@@ -141,6 +141,6 @@ def solution1(n):
 
 def solution2(n):
     """
-    첫 번째 시도: 2진수로 변환했을 때의 1의 개수 세기
+    2진수로 변환했을 때의 1의 개수 세기
     """
     return bin(n).count('1')
