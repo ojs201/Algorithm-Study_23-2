@@ -122,20 +122,21 @@ def solution(n):
     if n <= 1:
         return n
 
-    dp = [0] * (n//2 + 1)
+    dp = [0] * (n // 2 + 1)
     dp[1] = 1
 
-    for i in range(2, n//2 + 1):
+    for i in range(2, n // 2 + 1):
         dp[i] = dp[i // 2] + dp[i % 2]
 
-    return dp[n//2] + dp[n%2]
+    return dp[n // 2] + dp[n % 2]
 
 
 def solution1(n):
     """
     거리가 0이 될 때까지 2로 나눈 몫 중 홀수의 개수 세기
     """
-    return len([curr for i in range(n.bit_length()) if (curr := n >> i) % 2 != 0])
+    # return len([curr for i in range(n.bit_length()) if (curr := n >> i) % 2 != 0])
+    return sum([n >> i & 1 for i in range(n.bit_length())])
 
 
 def solution2(n):
