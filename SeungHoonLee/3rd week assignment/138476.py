@@ -1,6 +1,6 @@
 """
 LV2. 귤 고르기
-[https://school.programmers.co.kr/learn/courses/30/lessons/138476
+[https://school.programmers.co.kr/learn/courses/30/lessons/138476]
 
 풀이:
 1. 귤을 크기별로 분류한다.
