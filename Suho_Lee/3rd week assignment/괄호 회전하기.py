@@ -42,5 +42,3 @@ def isStack(stack):
     # 스택이 비었는지 확인
     # 비어있다면 True 아니면 False
     return not tmp
-            
-    
