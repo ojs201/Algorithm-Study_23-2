@@ -63,3 +63,12 @@ H-Index의 조건:
 def solution(citations):
     citations.sort(reverse=True)
     return next((h for h, citation in enumerate(citations) if h >= citation), len(citations))
+
+
+def solution2(citations):
+    h = 0
+    for citation in sorted(citations, reverse=True):
+        if h >= citation:
+            break
+        h += 1
+    return h
