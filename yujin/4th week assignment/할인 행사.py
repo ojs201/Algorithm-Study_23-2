@@ -5,7 +5,7 @@ def solution(want, number, discount):
         for _ in range(number[i]):
             new_want.append(want[i])
         new_want.sort()
-    for j in range(len(discount)-9):
+    for j in range(len(discount)):
         discount_10 = discount[j:j+10]
         discount_10.sort()
         if new_want == discount_10:
