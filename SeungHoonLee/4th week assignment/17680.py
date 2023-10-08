@@ -17,7 +17,7 @@ LV2. [1차] 캐시
 3. 캐시 크기에 따라 다음을 진행한다.
   
   3.1 len(캐시) >= cacheSize:
-		- 캐시의 앞(front)에 있는 도시를 삭제한다.
+    - 캐시의 앞(front)에 있는 도시를 삭제한다.
   
 4. 계산된 실행 시간을 반환한다.
 """
@@ -43,13 +43,13 @@ class CacheMeter(CacheStat):
         hit = self.is_hit(item)
         self.exec_time += (self.CACHE_HIT if hit else self.CACHE_MISS)
         
-        if not hit:
-            self.cache.append(item)
-            self.update_cache()
+        if hit:
+			self.move_to_front(item)
             return
         
-        self.move_to_front(item)
-    
+        self.cache.append(item)
+        self.update_cache()
+        
     def is_hit(self, item):
         return item in self.cache
     
