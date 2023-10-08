@@ -44,7 +44,7 @@ class CacheMeter(CacheStat):
         self.exec_time += (self.CACHE_HIT if hit else self.CACHE_MISS)
         
         if hit:
-	    self.move_to_front(item)
+	    self.move_to_rear(item)
             return
         
         self.cache.append(item)
@@ -53,7 +53,7 @@ class CacheMeter(CacheStat):
     def is_hit(self, item):
         return item in self.cache
     
-    def move_to_front(self, item):
+    def move_to_rear(self, item):
         if (idx := self.cache.index(item)) >= 0:
             self.cache.append(self.cache.pop(idx))
 		
