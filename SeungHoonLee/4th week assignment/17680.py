@@ -37,24 +37,28 @@ class ExecutionTimeMeter(CacheStat):
         return sum([self.execute(item.upper()) for item in items])
 
     def execute(self, item):
-        if self.is_hit(item):
-            self.move_to_rear(item)
-            return self.CACHE_HIT
-
-        self.cache.append(item)
-        self.update_cache()
-        return self.CACHE_MISS
+        hit = self.is_hit(item)
+        self.update_cache(item, hit)
+        return self.CACHE_HIT if hit else self.CACHE_MISS
 
     def is_hit(self, item):
         return item in self.cache
 
+    def update_cache(self, item, hit):
+        if hit:
+            self.move_to_rear(item)
+            return
+        self.add_cache(item)
+
+    def add_cache(self, item):
+        self.cache.append(item)
+
+        if len(self.cache) > self.cache_size:
+            self.cache.pop(0)
+
     def move_to_rear(self, item):
         if (idx := self.cache.index(item)) >= 0:
             self.cache.append(self.cache.pop(idx))
-
-    def update_cache(self):
-        if len(self.cache) > self.cache_size:
-            self.cache.pop(0)
 
 
 def solution(cacheSize, cities):
