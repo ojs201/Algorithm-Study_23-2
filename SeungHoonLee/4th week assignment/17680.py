@@ -28,7 +28,7 @@ class CacheStat:
     CACHE_MISS = 5
 
     
-class CacheMeter(CacheStat):
+class ExecutionTimeMeter(CacheStat):
     def __init__(self, cache_size):
         self.cache_size = cache_size
         self.cache = []
@@ -44,7 +44,7 @@ class CacheMeter(CacheStat):
         self.exec_time += (self.CACHE_HIT if hit else self.CACHE_MISS)
         
         if hit:
-	    self.move_to_rear(item)
+            self.move_to_rear(item)
             return
         
         self.cache.append(item)
@@ -63,5 +63,5 @@ class CacheMeter(CacheStat):
 
 
 def solution(cacheSize, cities):
-    cache_meter = CacheMeter(cacheSize)
-    return cache_meter.meter(cities)
+    exec_time_meter = ExecutionTimeMeter(cacheSize)
+    return exec_time_meter.meter(cities)
