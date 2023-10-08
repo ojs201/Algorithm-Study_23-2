@@ -53,15 +53,15 @@ class CacheMeter(CacheStat):
     def is_hit(self, item):
         return item in self.cache
     
-    def update_cache(self):
-        if len(self.cache) > self.cache_size:
-            self.cache.pop(0)
-    
     def move_to_front(self, item):
         if (idx := self.cache.index(item)) >= 0:
             self.cache.append(self.cache.pop(idx))
-        
-        
+		
+    def update_cache(self):
+        if len(self.cache) > self.cache_size:
+            self.cache.pop(0)        
+
+
 def solution(cacheSize, cities):
     cache_meter = CacheMeter(cacheSize)
     return cache_meter.meter(cities)
