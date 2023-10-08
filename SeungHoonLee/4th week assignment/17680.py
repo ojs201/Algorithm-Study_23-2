@@ -44,7 +44,7 @@ class CacheMeter(CacheStat):
         self.exec_time += (self.CACHE_HIT if hit else self.CACHE_MISS)
         
         if hit:
-			self.move_to_front(item)
+	    self.move_to_front(item)
             return
         
         self.cache.append(item)
