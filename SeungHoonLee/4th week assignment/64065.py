@@ -11,7 +11,13 @@ LV2. 튜플
   B. 처음 나온 원소인 경우:
     - 튜플 집합에 추가한다.
 4. 튜플 집합을 반환한다.
+
+풀이2:
+문제에서 주어진 튜플의 특징 상 숫자를 기준으로 가장 많이 나온 숫자부터 내림차순으로
+배치된 것이 튜플 집합임을 이용한다.
 """
+import re
+from collections import Counter
 
 
 def solution(s):
@@ -24,3 +30,8 @@ def solution(s):
                 answer.append(el)
 
     return answer
+
+
+def solution(s):
+    c = Counter(re.findall('\d+', s))
+    return [int(k) for k, _ in c.most_common()]
