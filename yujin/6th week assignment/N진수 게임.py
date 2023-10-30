@@ -12,7 +12,7 @@ def solution(n, t, m, p):
     answer = ''
     change = ''
     i = 0
-    while len(answer) < t:
+    while True:
         change += numeral(i, n)
         i += 1
         if len(change) > m * t:
