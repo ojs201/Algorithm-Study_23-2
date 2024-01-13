@@ -14,6 +14,33 @@ import heapq
 INF = int(1e9)
 
 
+def solution2(N, road, K):
+    """
+    heap queue 사용 X 다익스트라 알고리즘 구현
+    """
+    graph = [[] for _ in range(N + 1)]
+    distance = [INF] * (N + 1)
+
+    for a, b, c in road:
+        graph[a].append((b, c))
+        graph[b].append((a, c))
+
+    q = [(1, 0)]
+    distance[1] = 0
+
+    while q:
+        now, dist = q.pop(0)
+
+        for adj_node, adj_dist in graph[now]:
+            cost = dist + adj_dist
+
+            if cost < distance[adj_node]:
+                distance[adj_node] = cost
+                q.append((adj_node, cost))
+
+    return len([dist for dist in distance if dist != INF and dist <= K])
+
+
 def solution(N, road, K):
     graph = [[] for _ in range(N + 1)]
     distance = [INF] * (N + 1)
